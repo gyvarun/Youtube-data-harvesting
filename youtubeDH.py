@@ -555,7 +555,7 @@ with tab3:
 
 # Q6
     elif question_tosql == '6. What is the total number of likes and dislikes for each video, and what are their corresponding video names?':
-        st.write('**Note:- In November 2021, YouTube removed the public dislike count from all of its videos.**')
+        st.write('**Note:- Starting December 13th 2021, YouTube removed the public dislike count from all of its videos.**')
         cursor.execute("SELECT channel.Channel_Name, video.Video_Name, video.Like_Count, video.Dislike_Count FROM channel JOIN playlist ON channel.Channel_Id = playlist.Channel_Id JOIN video ON playlist.Playlist_Id = video.Playlist_Id ORDER BY video.Like_Count DESC;")
         result_6= cursor.fetchall()
         df6 = pd.DataFrame(result_6,columns=['Channel Name', 'Video Name', 'Like count','Dislike count']).reset_index(drop=True)
