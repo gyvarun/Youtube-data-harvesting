@@ -20,7 +20,7 @@ The following mentioned libraries are used to build the application
 
 **Dash board libraries**-**Streamlit, Seaborn, Matplotlib**:	import streamlit as st, import seaborn as sns, from matplotlib import pyplot as plt
 
-**GUIDE**
+**GUIDE** 
 
 **1.	Data Collection** – The data collection tab on the dashboard is for collecting the channel data from YouTube and store it in the MongoDB.
 <img width="960" alt="DC" src="https://github.com/gyvarun/Youtube-data-harvesting/assets/162896993/d4f01691-c1d3-4dc0-8001-4e49ae75215e">
