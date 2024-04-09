@@ -504,7 +504,8 @@ with tab3:
                 fig = plt.figure(figsize=(20, 12))
                 sns.set_theme(style='whitegrid', palette='deep', font='sans-serif', font_scale=1.5, color_codes = True, rc=None)
                 ax = sns.barplot(x = 'Channel Name',y = 'Video Count',data = df2, palette="Set1", estimator="sum", errorbar=None)
-                ax.bar_label(ax.containers[0], fontsize=10)
+                for i in ax.containers:
+                    ax.bar_label(i, fontsize=10)
                 ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
                 plt.tight_layout()
                 st.pyplot(fig)
@@ -530,7 +531,8 @@ with tab3:
                 fig1 = plt.figure(figsize=(20, 16))
                 sns.set_theme(style='whitegrid', palette='deep', font='sans-serif', font_scale=1.5, color_codes = True, rc=None)
                 ax1 = sns.barplot(x = 'Video Name', y = 'View count',data = df3, palette="Set1", estimator="sum", errorbar=None)
-                ax1.bar_label(ax1.containers[0], fontsize=10)
+                for i in ax1.containers:
+                    ax1.bar_label(i, fontsize=10)
                 ax1.set_xticklabels(ax1.get_xticklabels(), rotation=40, ha="right")
                 plt.tight_layout()
                 st.pyplot(fig1)
@@ -581,7 +583,8 @@ with tab3:
                 fig2 = plt.figure(figsize=(16, 12))
                 sns.set_theme(style='whitegrid', palette='deep', font='sans-serif', font_scale=1.5, color_codes = True, rc=None)
                 ax2 = sns.barplot(x = 'Channel Name',y = 'Total number of views',data = df7, palette="Set1", estimator="sum", errorbar=None)
-                ax2.bar_label(ax2.containers[0], fontsize=10)
+                for i in ax2.containers:
+                    ax2.bar_label(i, fontsize=10)
                 ax2.set_xticklabels(ax2.get_xticklabels(), rotation=40, ha="right")
                 plt.tight_layout()
                 st.pyplot(fig2)
