@@ -497,7 +497,7 @@ with tab3:
             st.dataframe(df2)
 
         with col2:
-            view = st.button('**View Graph**')
+            view = st.button('**View Analysis**')
             if view:
                 view = True
                 st.write('Channels and their Videos')
@@ -523,7 +523,7 @@ with tab3:
             st.dataframe(df3)
 
         with col2:
-            view = st.button('**View Graph**')
+            view = st.button('**View Analysis**')
             if view:
                 view = True
                 st.write('Videos and View Count')
@@ -574,7 +574,7 @@ with tab3:
             st.dataframe(df7)
         
         with col2:
-            view = st.button('**View Graph**')
+            view = st.button('**View Analysis**')
             if view:
                 view = True
                 st.write('Channel and View Count')
